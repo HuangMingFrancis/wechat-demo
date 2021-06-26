@@ -1,0 +1,20 @@
+<view>
+  <swiper class="swiper" indicator-dots="true" autoplay='true' interval='4000' duration='500' circular='true'>
+    <swiper-item wx:for="{{bannerList}}" wx:key="index">
+      <image src="{{item.imagePath}}" data-url='{{item.url}}' bindtap='onItemClick'></image>
+    </swiper-item>
+  </swiper>
+  <view class='article-box' wx:for="{{articleList}}" wx:key="index" data-url='{{item.link}}' bindtap='onItemClick'>
+    <view>
+      <image class='icon' src='{{item.collect? "../../images/ic_btn_collect.png":"../../images/ic_btn_collect_def.png"}}' data-id='{{item.id}}' data-zan='{{item.collect}}' data-index='{{index}}' catchtap='collectClick'></image>
+    </view>
+    <view class=".message">
+      <view class='title'>{{item.title}}</view>
+      <view class='article-top' style="margin-top: 20rpx; margin-bottom: 20rpx">
+        <view class='name'>{{item.author}}</view>
+        <view class='type'>{{item.chapterName}}/{{item.superChapterName}}</view>
+        <view class='time'>{{item.niceDate}}</view>
+      </view>
+    </view>
+  </view>
+</view>

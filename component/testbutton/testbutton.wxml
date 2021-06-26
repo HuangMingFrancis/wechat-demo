@@ -1,0 +1,3 @@
+<view class="test-button" bindtap="onClick">
+  {{content}}
+</view>

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "Test-Button": "/component/testbutton/testbutton"
+  },
+  "navigationBarTitleText": "项目"
+}

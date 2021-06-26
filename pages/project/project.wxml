@@ -1,0 +1,7 @@
+<!--pages/project/project.wxml-->
+<button bindtap="skipTest">跳转界面 Test</button>
+<button bindtap="setStorageTest">写入缓存</button>
+<button bindtap="deleteStorageTest">删除缓存</button>
+<button bindtap="getStorageTest">读取缓存 {{name}}</button>
+<button bindtap="scanCode">扫描二维码 {{qrcode}}</button>
+<Test-Button content="This is a test-button" bindonClick="onClick"></Test-Button>

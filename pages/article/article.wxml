@@ -1,0 +1,21 @@
+<!--pages/second/second.wxml-->
+<scroll-view scroll-x class="scroll">
+  <block wx:for="{{authors}}" wx:key="index">
+    <view class="nav-item {{currentTab == index ?'active':''}}" data-index='{{index}}' bindtap='onTabClick'>{{item}}</view>
+  </block>
+</scroll-view>
+
+<view class='article-box' wx:for="{{articleList}}" wx:key="index" data-url='{{item.link}}' bindtap='onItemClick'>
+    <view>
+      <image class='icon' src='{{item.collect? "../../images/ic_btn_collect.png":"../../images/ic_btn_collect_def.png"}}' data-id='{{item.id}}' data-zan='{{item.collect}}' data-index='{{index}}' catchtap='collectClick'></image>
+    </view>
+    <view class=".message">
+      <view class='title'>{{item.title}}</view>
+      <view class='article-top' style="margin-top: 20rpx; margin-bottom: 20rpx">
+        <view class='name'>{{item.author}}</view>
+        <view class='type'>{{item.chapterName}}/{{item.superChapterName}}</view>
+        <view class='time'>{{item.niceDate}}</view>
+      </view>
+    </view>
+  </view>
+

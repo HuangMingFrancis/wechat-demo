@@ -1,0 +1,118 @@
+.swiper {
+  width: 750rpx;
+}
+
+.title {
+  font-size: 24pt;
+  color: blue;
+}
+page {
+  background-color: #f5f5f5;
+  box-sizing: border-box;
+}
+.item {
+  display: flex;
+  width: 750rpx;
+  height: 200rpx;
+  border-bottom: 1px solid #e2e2e2
+}
+.collect {
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 40rpx;
+  margin-left: 40rpx;
+  background-position: center center;
+}
+.red {
+  color: #f56a6b;
+  border: 1px solid #f56a6b;
+}
+.info_art {
+  width: 90%;
+  margin-left: 2%;
+  margin-top: 2%;
+}
+
+.article-box {
+  padding: 10rpx 30rpx;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-top: 10rpx solid #f5f5f5;
+  display: flex;
+  align-items: center;
+}
+
+.article-top {
+  display: flex;
+  align-items: center;
+}
+
+.head {
+  background-color: #ff8635;
+  border-radius: 50%;
+  width: 30rpx;
+  height: 30rpx;
+  font-size: 20rpx;
+  text-align: center;
+  color: #fff;
+}
+
+.name {
+  font-size: 24rpx;
+  color: #333;
+  margin-left: 10rpx;
+}
+
+.type {
+  color: #666;
+  font-size: 24rpx;
+  margin-left: 20rpx;
+}
+
+.title {
+  display: block;
+  font-size: 28rpx;
+  color: #222;
+  line-height: 40rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-top: 15rpx;
+}
+
+.desc {
+  display: -webkit-box;
+  font-size: 24rpx;
+  color: #999;
+  line-height: 40rpx;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 10rpx;
+}
+
+.icon {
+  vertical-align: middle;
+  width: 35rpx;
+  height: 35rpx;
+}
+
+.time {
+  font-size: 24rpx;
+  color: #666;
+  vertical-align: middle;
+  flex: 1;
+  text-align: right;
+}
+
+.message {
+  width: 90%;
+  margin-left: 20rpx; 
+  margin-right: 20rpx;
+}
+
+.scroll-view {
+  height: 100%;
+}
